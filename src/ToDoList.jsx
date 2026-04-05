@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { db } from './firebase';
 
 function ToDoList() {
-  const [tasks, setTasks] = useState(["Eat Breakfast", "Take a Shower", "Walk the Dog"]);
+  const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
   const [isEditing, setIsEditing] = useState(null);
   const [editValue, setEditValue] = useState("");
